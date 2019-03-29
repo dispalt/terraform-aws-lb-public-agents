@@ -24,6 +24,16 @@ variable "instances" {
   type        = "list"
 }
 
+variable "disable" {
+  description = "Do not create load balancer and its resources"
+  default     = false
+}
+
+variable "name_prefix" {
+  description = "Name Prefix"
+  default     = ""
+}
+
 variable "https_acm_cert_arn" {
   description = "ACM certifacte to be used."
   default     = ""

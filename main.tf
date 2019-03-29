@@ -52,5 +52,7 @@ module "public-agents" {
   security_groups     = ["${var.security_groups}"]
   subnet_ids          = ["${var.subnet_ids}"]
   internal            = "${var.internal}"
+  disable             = "${var.disable}"
+  name_prefix         = "${var.name_prefix}"
   tags                = "${var.tags}"
 }
